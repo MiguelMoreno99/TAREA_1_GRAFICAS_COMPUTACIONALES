@@ -1,0 +1,4 @@
+﻿  glad.c
+  Tangram.cpp
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Tarea1_GRAFCOM.vcxproj -> D:\ARCHIVOS_GRAFCOM\Tarea1_GRAFCOM\x64\Debug\Tarea1_GRAFCOM.exe
