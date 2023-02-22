@@ -1,2 +1,3 @@
 ﻿  Tangram.cpp
+D:\ARCHIVOS_GRAFCOM\TAREA_1\Tarea1_GRAFCOM\Tangram.cpp(147,5): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   Tarea1_GRAFCOM.vcxproj -> D:\ARCHIVOS_GRAFCOM\TAREA_1\Tarea1_GRAFCOM\x64\Debug\Tarea1_GRAFCOM.exe
