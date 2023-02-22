@@ -6,8 +6,8 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
 // settings
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int SCR_WIDTH = 850;
+const unsigned int SCR_HEIGHT = 800;
 
 
 const char* vertexShaderSource =
@@ -102,20 +102,35 @@ int main()
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     float vertices[] = {
-         0.5f,  0.5f, 0.0f,  // top right
-         1.0f, -0.5f, 0.0f, //punto adicional
-         0.5f, -0.5f, 0.0f,  // bottom right
-        -0.5f, -0.5f, 0.0f,  // bottom left
-        -0.5f,  0.5f, 0.0f,   // top left 
-        -1.0f,  -0.5f, 0.0f,  // top right
-        -1.0f,   0.5f, 0.0f,  // bottom right
+         0.28f,  -0.16f, 0.0f,  //0
+         0.33f, -0.32f, 0.0f,  //1
+         0.23f, -0.27f, 0.0f,  //2
+         0.28f, -0.42f, 0.0f,  //3
+         0.12f,  0.12f, 0.0f,   //4
+         0.12f,  0.0f, 0.0f,    //5
+         0.0f,   0.0f, 0.0f,    //6
+         0.0f,   0.24f, 0.0f,    //7
+        -0.12f,  0.12f, 0.0f,    //8
+         0.0f,   0.12f, 0.0f,    //9
+         0.12f,  -0.23f, 0.0f,    //10
+         0.12f,  -0.36f, 0.0f,    //11
+         0.0f,  -0.36f, 0.0f,    //12
+        -0.12f,   0.0f, 0.0f,    //13
+        -0.03f,  -0.08f, 0.0f,    //14
+        -0.20f,  -0.08f, 0.0f,    //15
+         0.12f,  -0.31f, 0.0f,    //16
+
     };
     unsigned int indices[] = {  // note that we start from 0!
         0, 1, 2,
-        2, 4, 0,  // first Triangle
-        4, 3, 2,   // second Triangle
-        4, 3, 6,   // third Triangle
-        6, 5, 3,  // fourth Triangle
+        2, 3, 1,
+        4, 5, 6,
+        7, 4, 8,
+        4, 9, 6,
+        13, 5, 10,
+        5, 0, 16,
+        10, 11, 12,
+        13, 14, 15
     };
     unsigned int VBO, VAO, EBO;
     glGenVertexArrays(1, &VAO);
@@ -169,7 +184,7 @@ int main()
         glPointSize(20.0);
 
         glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-        glDrawElements(GL_TRIANGLES, 15, GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, 27, GL_UNSIGNED_INT, 0);
         // glBindVertexArray(0); // no need to unbind it every time 
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
