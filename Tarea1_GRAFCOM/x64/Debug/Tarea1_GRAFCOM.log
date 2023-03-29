@@ -1,3 +1,15 @@
-﻿  Tangram.cpp
-D:\ARCHIVOS_GRAFCOM\TAREA_1\Tarea1_GRAFCOM\Tangram.cpp(147,5): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  Tarea1_GRAFCOM.vcxproj -> D:\ARCHIVOS_GRAFCOM\TAREA_1\Tarea1_GRAFCOM\x64\Debug\Tarea1_GRAFCOM.exe
+﻿Tangram.obj : error LNK2019: símbolo externo glfwInit sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwTerminate sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwWindowHint sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwCreateWindow sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwWindowShouldClose sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwSetWindowShouldClose sin resolver al que se hace referencia en la función "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+Tangram.obj : error LNK2019: símbolo externo glfwSetFramebufferSizeCallback sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwPollEvents sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwGetKey sin resolver al que se hace referencia en la función "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+Tangram.obj : error LNK2019: símbolo externo glfwMakeContextCurrent sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwSwapBuffers sin resolver al que se hace referencia en la función main
+Tangram.obj : error LNK2019: símbolo externo glfwGetProcAddress sin resolver al que se hace referencia en la función main
+C:\GRAFICAS_COMPUTACIONALES\lib\opengl32.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+C:\GRAFICAS_COMPUTACIONALES\lib\glfw3.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+D:\ARCHIVOS_GRAFCOM\TAREA_1\Tarea1_GRAFCOM\x64\Debug\Tarea1_GRAFCOM.exe : fatal error LNK1120: 12 externos sin resolver
